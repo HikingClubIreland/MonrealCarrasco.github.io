@@ -1,2 +1,2 @@
-theme: jekyll-theme-leap-day
-title: Welcome to Love Birds in Ireland
+theme: jekyll-theme-merlot
+exclude: [vendor]
