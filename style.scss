@@ -271,11 +271,38 @@ nav {
   }
 }
 
+// HEADLINE CSS
+.headline {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+.headline-img img {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+.headline-text {
+  box-sizing: border-box;
+  padding-left: 40px;
+  width: 60%;
+  position: absolute;
+  right: 0;
+  vertical-align: top;
+  top: 50%;
+  transform: translateY(-50%);
+}
+// END OF HEADLINE
+
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+  clear: both;
 }
 
 footer {
