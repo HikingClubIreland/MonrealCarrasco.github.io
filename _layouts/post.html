@@ -11,6 +11,10 @@ layout: default
 
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
+    {% if page.last-modified-date != null %}
+    <br  />
+    Updated on {{ page.last-modified-date | date: "%B %d, %Y" }}
+    {% endif %}
   </div>
 
   {% include disqus.html %}

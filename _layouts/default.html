@@ -29,8 +29,9 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            {% for link in site.data.navigation.masthead %}
+            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
           </nav>
         </header>
       </div>
