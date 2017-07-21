@@ -272,27 +272,39 @@ nav {
 }
 
 // HEADLINE CSS
-.headline {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
+.wrapper-headline {
+  overflow: hidden;
 }
 
-.headline-img img {
-    width: 40%;
-    border-radius: 50%;
+.wrapper-headline div {
+  min-height: 200px;
+  padding: 10px;
+}
+
+.headline-img {
+  float: left;
+  margin-right: 10px;
+  width: 45%;
   }
 
 .headline-text {
-  box-sizing: border-box;
-  padding-left: 40px;
-  width: 60%;
-  position: absolute;
-  right: 0;
-  vertical-align: top;
-  top: 50%;
-  transform: translateY(-50%);
+  overflow: hidden;
+  margin: 10px;
+  margin-top: 10%;
+  min-height: 170px;
+}
+
+@media screen and (max-width: 400px) {
+  .headline-img {
+    float: none;
+    margin-right: 0;
+    width: auto;
+    border: 0;
+  }
+
+  .headline-text {
+    margin: 10px;
+  }
 }
 // END OF HEADLINE
 
