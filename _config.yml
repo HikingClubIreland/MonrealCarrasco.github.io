@@ -5,11 +5,23 @@
 # Name of your site (displayed in the header)
 name: Love Birds
 
-# Short bio or description (displayed in the header)
-description: Travel & Food Lovers
-
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://monrealcarrasco.github.io/images/AvatarLoveBirds-married.png
+
+# Site settings
+title: # Name of your site (displayed in the header)
+  en: Love Birds
+  es: Love Birds
+email: monrealcarrasco@gmail.com
+description: # Short bio or description (displayed in the header)
+  en: Travel & Food Lovers
+  es: Amantes de Viajes y Comidas del Mundo
+index:
+  en: index-en.html
+  es:
+feed:
+  en: /feed-en.xml
+  es: /feed.xml
 
 #
 # Flags below are optional
@@ -18,7 +30,7 @@ avatar: https://monrealcarrasco.github.io/images/AvatarLoveBirds-married.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: monrealcarrasco@gmail.com
   facebook:
   flickr:
   github: MonrealCarrasco/MonrealCarrasco.github.io
@@ -71,12 +83,15 @@ kramdown:
 # Set the Sass partials directory, as we're using @imports
 sass:
    style: :compressed
+   sass_dir: css/_sass
 #  style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - github-pages
 
+include: [blog]
 # Exclude these files from your production _site
 exclude: [vendor, CNAME, README.md, LICENSE, Gemfile.lock, Gemfile]

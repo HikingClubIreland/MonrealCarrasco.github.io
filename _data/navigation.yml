@@ -1,8 +1,22 @@
 # masthead navigation links
-masthead:
-  - title: "Home"
-    url: /
-  - title: "Blog"
-    url: /blog/
-  - title: "About"
-    url: /about/
+nav-menu:
+  en:
+    home:
+      title: "Home"
+      url: "/en/"
+    blog:
+      title: "Blog"
+      url: "/en/blog/"
+    about:
+      title: "About"
+      url: "/en/about/"
+  es:
+    home:
+      title: "Inicio"
+      url: "/"
+    blog:
+      title: "Blog"
+      url: "/blog/"
+    about:
+      title: "Acerca de"
+      url: "/acerca-de/"
