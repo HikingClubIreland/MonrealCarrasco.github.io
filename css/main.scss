@@ -240,15 +240,27 @@ nav {
 //
 // .main
 //
+.posts {
+  overflow: hidden;
+}
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  padding: 2em;
+  border: 2px solid #73AD21;
+  border-radius: 25px;
+  width: inherit;
+  margin: 10px;
+  float: left;
+}
+
+.post > h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+//  padding-bottom: 1em;
+//  border-bottom: none;
 }
 
 .post {
